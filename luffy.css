@@ -1,0 +1,24 @@
+header h1 {
+    font-weight: bold;
+    background-color: crimson;
+}
+header h3 {
+    font-weight: bold;
+    color: black;
+    background-color: yellow;
+}
+.list {
+    color: red;
+    background-color: yellow;
+}
+a {
+    color: black;
+    background-color: blue;
+}
+a:hover {
+    color: white;
+    background-color: aqua;
+}
+a:focus {
+    background-color: chartreuse;
+}
