@@ -4,8 +4,12 @@
     padding: 0;
   }
   
-  header {
+  .image {
     background-color: crimson;
+    background-image: url(./image/Screenshot\ 2025-04-28\ 164027.png);
+    width: 100%;
+    height: 200px;
+    background-size: 200px;
     color: white;
     text-align: center;
     padding: 20px 0;
@@ -115,3 +119,28 @@
     margin-top: 15px;
     margin-bottom: 5px;
   }
+  .social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+  }
+  
+  .social-icons img {
+    width: 30px;
+    cursor: pointer;
+    transition: transform 0.3s;
+  }
+  
+  .social-icons img:hover {
+    transform: scale(1.2);
+  }
+footer p {
+  text-align: center;
+  color: black;
+  margin-top: 20px;
+}  
+div p {
+  text-align: center;
+  color: black;
+  margin-top: 20px;
+}
