@@ -151,3 +151,13 @@ div p {
   color: black;
   margin-top: 20px;
 }
+
+.media img {
+  width: 100%;
+  height: auto;
+}
+
+.media video {
+  width: 100%;
+  height: auto;
+}
