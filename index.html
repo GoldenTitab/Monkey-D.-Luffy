@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="fa">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="این وبسایت به معرفی کاپیتان کلاه حصیری‌ها، لوفی، از انیمه One Piece می‌پردازد."
+    />
+    <meta name="theme-color" content="#0B1220" />
+    <title>Monkey D. Luffy | زندگی‌نامه‌ی کاپیتان کلاه حصیری‌ها</title>
+    <link rel="icon" type="image/png" href="./image/Untitled-1.png" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="luffy.css" />
+  </head>
+  <body dir="rtl">
+    <!-- Grain / rope texture overlay -->
+    <div class="grain" aria-hidden="true"></div>
+
+    <a class="skip-link" href="#main-content">رفتن به محتوای اصلی</a>
+
+    <header class="site-header" id="home">
+      <div class="header-bg" aria-hidden="true"></div>
+
+      <div class="header-top">
+        <span class="brand">🏴‍☠️ کلاه حصیری‌ها</span>
+
+        <button
+          id="theme-toggle"
+          class="theme-toggle"
+          type="button"
+          aria-label="تغییر پوسته‌ی روز و شب"
+          aria-pressed="false"
+        >
+          <span class="theme-toggle__wheel">
+            <span class="theme-toggle__icon theme-toggle__icon--sun">☀️</span>
+            <span class="theme-toggle__icon theme-toggle__icon--moon">🌙</span>
+          </span>
+          <span class="theme-toggle__label" data-label>حالت شب</span>
+        </button>
+      </div>
+
+      <div class="hero">
+        <p class="hero__eyebrow reveal" data-reveal>وانتد پوستر · تحت تعقیب دولت جهانی</p>
+        <h1 class="hero__title reveal" data-reveal>
+          مانکی دی. <span class="hero__title-accent">لوفی</span>
+        </h1>
+        <h3 class="hero__subtitle reveal" data-reveal>
+          اولین وبسایت فارسی راجع به کاپیتان کلاه حصیری‌ها
+        </h3>
+        <p class="hero__desc reveal" data-reveal>
+          پسری با رویایی به بزرگی اقیانوس: نشستن بر تخت پادشاهی دزدان دریایی.
+        </p>
+
+        <nav class="top-nav-wrap reveal" data-reveal aria-label="پیمایش اصلی">
+          <ul class="top-nav">
+            <li><a href="#home">خانه</a></li>
+            <li><a href="#Biography">درباره ما</a></li>
+            <li><a href="#contact">تماس</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="hero__scroll-cue" aria-hidden="true">
+        <span></span>
+      </div>
+    </header>
+
+    <main id="main-content">
+      <section class="media reveal" data-reveal aria-labelledby="media-heading">
+        <h2 id="media-heading" class="visually-hidden">رسانه‌ها</h2>
+
+        <figure class="media__figure">
+          <img
+            src="./image/Screenshot 2025-04-06 203740.png"
+            alt="Monkey D. Luffy"
+            loading="lazy"
+          />
+          <figcaption>تصویری از لوفی</figcaption>
+        </figure>
+
+        <div class="media__side">
+          <div class="media__card">
+            <p class="media__label">🎧 موسیقی متن</p>
+            <audio controls>
+              <source
+                src="./music/Namie-Amuro-Hope-One-Piece.mp3"
+                type="audio/mp3"
+              />
+              مرورگر شما از پخش صوت پشتیبانی نمی‌کند.
+            </audio>
+          </div>
+
+          <div class="media__card">
+            <p class="media__label">🎬 ویدیوی معرفی</p>
+            <video controls poster="./image/Screenshot 2025-04-06 203740.png">
+              <source src="./video/One Piece AMV - Royalty.mp4" type="video/mp4" />
+              مرورگر شما از پخش ویدیو پشتیبانی نمی‌کند.
+            </video>
+          </div>
+        </div>
+      </section>
+
+      <nav class="anchor-nav reveal" data-reveal aria-label="پیمایش بخش‌ها">
+        <ul>
+          <li><a href="#Biography"><span class="anchor-nav__icon">📜</span>بیوگرافی</a></li>
+          <li><a href="#Crew"><span class="anchor-nav__icon">⚓</span>خدمه</a></li>
+          <li><a href="#Powers"><span class="anchor-nav__icon">🥊</span>توانایی‌ها</a></li>
+          <li><a href="#Achievements"><span class="anchor-nav__icon">🏆</span>موفقیت‌ها</a></li>
+        </ul>
+      </nav>
+
+      <section id="Biography" class="section">
+        <div class="section__intro reveal" data-reveal>
+          <span class="section__eyebrow">۰۱ · شروع سفر</span>
+          <h2>بیوگرافی شخصیت</h2>
+        </div>
+
+        <p class="description reveal" data-reveal>
+          مانکی دی. لوفی در روستای فوشا در دریای شرقی بزرگ شد و از کودکی رویای
+          به دست آوردن گنجینه‌ی افسانه‌ای «وان پیس» و رسیدن به عنوان
+          «پادشاه دزدان دریایی» را در سر می‌پروراند. او با خوردن میوه‌ی
+          شیطانی گوم‌گوم بدون قصد قبلی، بدنی کِشسان و لاستیکی به دست آورد؛
+          بهایی که هرگز از پرداختش پشیمان نشد. در سن هفده سالگی با یک قایق
+          کوچک از فوشا راهی دریاها شد تا خدمه‌ای بسازد و به بزرگ‌ترین رؤیای
+          زندگی‌اش برسد.
+        </p>
+
+        <ol class="timeline">
+          <li class="timeline__item reveal" data-reveal>
+            <span class="timeline__dot" aria-hidden="true"></span>
+            <div class="timeline__content">
+              <h4>روستای فوشا</h4>
+              <p>کودکی لوفی و آشنایی با «شنکس سرخ» که سرنوشتش را برای همیشه تغییر داد.</p>
+            </div>
+          </li>
+          <li class="timeline__item reveal" data-reveal>
+            <span class="timeline__dot" aria-hidden="true"></span>
+            <div class="timeline__content">
+              <h4>عزیمت از دریای شرقی</h4>
+              <p>آغاز سفر تنها با یک قایق ماهیگیری کوچک و کلاه حصیری به یادگار از شنکس.</p>
+            </div>
+          </li>
+          <li class="timeline__item reveal" data-reveal>
+            <span class="timeline__dot" aria-hidden="true"></span>
+            <div class="timeline__content">
+              <h4>عبور از گرند لاین</h4>
+              <p>شکل‌گیری خدمه‌ی کلاه حصیری‌ها و ورود به خطرناک‌ترین مسیر دریایی جهان.</p>
+            </div>
+          </li>
+          <li class="timeline__item reveal" data-reveal>
+            <span class="timeline__dot" aria-hidden="true"></span>
+            <div class="timeline__content">
+              <h4>نیو ورلد</h4>
+              <p>رویارویی با امپراتوران دریا و نزدیک‌تر شدن هر روز به هدف نهایی.</p>
+            </div>
+          </li>
+        </ol>
+      </section>
+
+      <section id="Crew" class="section section--alt">
+        <div class="section__intro reveal" data-reveal>
+          <span class="section__eyebrow">۰۲ · هم‌سفران</span>
+          <h2>اعضای خدمه</h2>
+        </div>
+        <p class="description reveal" data-reveal>
+          خدمه‌ی کلاه حصیری‌ها گروهی از رؤیاپردازانی هستند که هرکدام هدفی
+          شخصی را دنبال می‌کنند؛ اما در کنار هم، خانواده‌ای واقعی ساخته‌اند.
+        </p>
+
+        <div class="crew-grid">
+          <article class="crew-card reveal" data-reveal>
+            <span class="crew-card__tag">ناخدا</span>
+            <h4>مانکی دی. لوفی</h4>
+            <p>خالق و رهبر خدمه؛ رؤیایش پادشاه دزدان دریایی شدن است.</p>
+          </article>
+          <article class="crew-card reveal" data-reveal>
+            <span class="crew-card__tag">شمشیرزن</span>
+            <h4>رورونوا زورو</h4>
+            <p>آرزو دارد بزرگ‌ترین شمشیرزن جهان شود.</p>
+          </article>
+          <article class="crew-card reveal" data-reveal>
+            <span class="crew-card__tag">دریانورد</span>
+            <h4>نامی</h4>
+            <p>می‌خواهد نقشه‌ی کاملی از تمام دنیا رسم کند.</p>
+          </article>
+          <article class="crew-card reveal" data-reveal>
+            <span class="crew-card__tag">تیرانداز</span>
+            <h4>یوسوپ</h4>
+            <p>در آرزوی تبدیل شدن به یک جنگجوی شجاع واقعی است.</p>
+          </article>
+          <article class="crew-card reveal" data-reveal>
+            <span class="crew-card__tag">آشپز</span>
+            <h4>وینسموک سانجی</h4>
+            <p>به دنبال یافتن اقیانوس افسانه‌ای آل بلو می‌گردد.</p>
+          </article>
+          <article class="crew-card reveal" data-reveal>
+            <span class="crew-card__tag">پزشک</span>
+            <h4>تونی تونی چوپر</h4>
+            <p>رِیندیری که رؤیای درمان هر بیماری را در سر دارد.</p>
+          </article>
+          <article class="crew-card reveal" data-reveal>
+            <span class="crew-card__tag">باستان‌شناس</span>
+            <h4>نیکو رابین</h4>
+            <p>به دنبال کشف تاریخ حقیقی و گمشده‌ی جهان است.</p>
+          </article>
+          <article class="crew-card reveal" data-reveal>
+            <span class="crew-card__tag">نجار</span>
+            <h4>فرانکی</h4>
+            <p>رؤیای ساخت کشتی‌ای که دور دنیا را طی کند در سر دارد.</p>
+          </article>
+          <article class="crew-card reveal" data-reveal>
+            <span class="crew-card__tag">موزیسین</span>
+            <h4>بروک</h4>
+            <p>می‌خواهد یک‌بار دیگر دوست قدیمی‌اش را ملاقات کند.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="Powers" class="section">
+        <div class="section__intro reveal" data-reveal>
+          <span class="section__eyebrow">۰۳ · قدرت درون</span>
+          <h2>توانایی‌ها</h2>
+        </div>
+        <p class="description reveal" data-reveal>
+          قدرت لوفی از ترکیب میوه‌ی شیطانی، هاکی و اراده‌ای خستگی‌ناپذیر
+          شکل گرفته است.
+        </p>
+
+        <div class="power-grid">
+          <article class="power-card reveal" data-reveal>
+            <span class="power-card__icon">🍬</span>
+            <h4>میوه‌ی گوم‌گوم</h4>
+            <p>بدنی کِشسان همچون لاستیک که ضربات را جذب و حملات را غیرمنتظره می‌کند.</p>
+          </article>
+          <article class="power-card reveal" data-reveal>
+            <span class="power-card__icon">⚙️</span>
+            <h4>گیرها (Gear)</h4>
+            <p>حالت‌های تکاملی بدن از گیر دوم سریع تا گیر پنجم افسانه‌ای.</p>
+          </article>
+          <article class="power-card reveal" data-reveal>
+            <span class="power-card__icon">👁️</span>
+            <h4>کنبونشوکو هاکی</h4>
+            <p>توانایی حس کردن حضور و نیت دیگران، پیش از وقوع هر حرکت.</p>
+          </article>
+          <article class="power-card reveal" data-reveal>
+            <span class="power-card__icon">🛡️</span>
+            <h4>بوسوشوکو هاکی</h4>
+            <p>زرهی نامرئی از اراده که بدن و ضربات را تقویت می‌کند.</p>
+          </article>
+          <article class="power-card reveal" data-reveal>
+            <span class="power-card__icon">👑</span>
+            <h4>هائوشوکو هاکی</h4>
+            <p>هاکی نادر پادشاهان که با اراده‌ای محض حریف را از پا درمی‌آورد.</p>
+          </article>
+        </div>
+
+        <div class="gear-track reveal" data-reveal aria-label="تکامل گیرها">
+          <div class="gear-track__line" aria-hidden="true"></div>
+          <div class="gear-track__step"><span>Gear 2nd</span></div>
+          <div class="gear-track__step"><span>Gear 3rd</span></div>
+          <div class="gear-track__step"><span>Gear 4th</span></div>
+          <div class="gear-track__step gear-track__step--final"><span>Gear 5th</span></div>
+        </div>
+      </section>
+
+      <section id="Achievements" class="section section--alt">
+        <div class="section__intro reveal" data-reveal>
+          <span class="section__eyebrow">۰۴ · ثبت در دفتر کشتی</span>
+          <h2>موفقیت‌ها</h2>
+        </div>
+        <p class="description reveal" data-reveal>
+          مسیر لوفی با فراز و فرودهای بزرگ همراه بوده؛ نشانه‌هایی که هر یک
+          گامی به سوی تبدیل شدن به پادشاه دزدان دریایی است.
+        </p>
+
+        <ul class="log">
+          <li class="log__item reveal" data-reveal>
+            <span class="log__flag" aria-hidden="true">🚩</span>
+            <div>
+              <h4>ورود به گرند لاین</h4>
+              <p>عبور از دروازه‌ی ریورس مانتین در کنار خدمه‌ی تازه‌شکل‌گرفته.</p>
+            </div>
+          </li>
+          <li class="log__item reveal" data-reveal>
+            <span class="log__flag" aria-hidden="true">🚩</span>
+            <div>
+              <h4>شکست بزرگ در ماری‌فورد</h4>
+              <p>جنگی که لوفی را از کودکی به مردی مصمم‌تر تبدیل کرد.</p>
+            </div>
+          </li>
+          <li class="log__item reveal" data-reveal>
+            <span class="log__flag" aria-hidden="true">🚩</span>
+            <div>
+              <h4>آزادسازی کشور وانو</h4>
+              <p>پیروزی بر یکی از چهار امپراتور دریا در کنار متحدان بی‌شمار.</p>
+            </div>
+          </li>
+          <li class="log__item reveal" data-reveal>
+            <span class="log__flag" aria-hidden="true">🚩</span>
+            <div>
+              <h4>لقب امپراتور دریا</h4>
+              <p>پیوستن نام لوفی به فهرست قدرتمندترین دزدان دریایی جهان.</p>
+            </div>
+          </li>
+        </ul>
+      </section>
+
+      <section id="contact" class="section section--contact">
+        <div class="section__intro reveal" data-reveal>
+          <span class="section__eyebrow">پیام به کشتی</span>
+          <h2>تماس با ما</h2>
+        </div>
+
+        <form class="contact-form reveal" data-reveal action="#contact" novalidate>
+          <div class="field">
+            <label for="username">نام کاربری</label>
+            <input
+              type="text"
+              id="username"
+              name="username"
+              placeholder="نام کاربری شما"
+              required
+            />
+          </div>
+
+          <div class="field">
+            <label for="email">ایمیل</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="ایمیل شما"
+              required
+            />
+          </div>
+
+          <div class="field">
+            <label for="comment">کامنت</label>
+            <textarea
+              id="comment"
+              name="comment"
+              placeholder="نظر شما"
+              required
+            ></textarea>
+          </div>
+
+          <button type="submit" class="btn-submit">
+            ارسال پیام
+            <span class="btn-submit__icon" aria-hidden="true">✉️</span>
+          </button>
+          <p class="field__status" id="form-status" role="status" aria-live="polite"></p>
+        </form>
+      </section>
+
+      <div class="social-login reveal" data-reveal>
+        <p>ورود سریع با شبکه‌های اجتماعی</p>
+        <div class="social-icons">
+          <img
+            src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png"
+            alt="ورود با فیسبوک"
+            loading="lazy"
+          />
+          <img
+            src="https://cdn-icons-png.flaticon.com/512/733/733579.png"
+            alt="ورود با توییتر"
+            loading="lazy"
+          />
+          <img
+            src="https://cdn-icons-png.flaticon.com/512/300/300221.png"
+            alt="ورود با گوگل"
+            loading="lazy"
+          />
+        </div>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <p>&copy; ۲۰۲۵ ساخته شده با علاقه توسط طرفداران One Piece</p>
+      <a href="#home" class="back-to-top" aria-label="بازگشت به بالای صفحه">⬆</a>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
