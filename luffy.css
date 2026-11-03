@@ -469,6 +469,12 @@ figcaption {
   padding: 0 1.5rem;
 }
 
+.anchor-nav {
+  position: sticky;
+  top: 0.75rem;
+  z-index: 20;
+}
+
 .anchor-nav ul {
   list-style: none;
   display: flex;
@@ -480,9 +486,6 @@ figcaption {
   border: 1px solid var(--line);
   border-radius: 999px;
   box-shadow: 0 10px 24px var(--shadow);
-  position: sticky;
-  top: 0.75rem;
-  z-index: 20;
 }
 
 .anchor-nav a {
@@ -611,7 +614,7 @@ figcaption {
   box-shadow: 0 0 0 2px var(--sea);
 }
 
-.timeline__content h4 {
+.timeline__content h3 {
   font-size: 1.05rem;
   margin-bottom: 0.3rem;
 }
@@ -655,7 +658,7 @@ figcaption {
   margin-bottom: 0.7rem;
 }
 
-.crew-card h4 {
+.crew-card h3 {
   font-size: 1.05rem;
   margin-bottom: 0.4rem;
 }
@@ -694,7 +697,7 @@ figcaption {
   margin-bottom: 0.6rem;
 }
 
-.power-card h4 {
+.power-card h3 {
   font-size: 1rem;
   margin-bottom: 0.4rem;
 }
@@ -707,7 +710,9 @@ figcaption {
 .gear-track {
   position: relative;
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.75rem;
   align-items: center;
   padding: 1.5rem 0.5rem;
 }
@@ -766,7 +771,7 @@ figcaption {
   margin-top: 0.2rem;
 }
 
-.log__item h4 {
+.log__item h3 {
   font-size: 1rem;
   margin-bottom: 0.25rem;
 }
@@ -867,40 +872,33 @@ figcaption {
   min-height: 1.2em;
 }
 
-/* ==========================================================================
-   Social login
-   ========================================================================== */
-
-.social-login {
-  text-align: center;
-  padding: 2rem 1.5rem 4rem;
-}
-
-.social-login p {
-  color: var(--text-muted);
-  margin-bottom: 1rem;
-}
-
-.social-icons {
-  display: flex;
-  justify-content: center;
-  gap: 1rem;
-}
-
-.social-icons img {
-  width: 34px;
-  padding: 0.5rem;
-  background: var(--bg-elevated);
+/* Honest note above the display-only contact form */
+.contact-note {
+  max-width: 520px;
+  margin: 0 auto 1.25rem;
+  background: var(--bg-alt);
   border: 1px solid var(--line);
-  border-radius: 50%;
-  cursor: pointer;
-  transition: transform var(--dur-fast) var(--ease),
-    box-shadow var(--dur-fast) var(--ease);
+  border-radius: var(--radius-md);
+  padding: 0.8rem 1.1rem;
+  font-size: 0.9rem;
+  color: var(--text-muted);
 }
 
-.social-icons img:hover {
-  transform: translateY(-4px) scale(1.08);
-  box-shadow: 0 10px 18px var(--shadow);
+.btn-submit:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.btn-submit:disabled:hover {
+  background: var(--crimson);
+  transform: none;
+}
+
+.site-footer__disclaimer {
+  max-width: 640px;
+  margin: 0 auto 0.75rem;
+  font-size: 0.85rem;
 }
 
 /* ==========================================================================
