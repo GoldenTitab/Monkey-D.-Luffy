@@ -102,7 +102,7 @@
       return;
     }
     if (status) {
-      status.textContent = "پیام شما با موفقیت ثبت شد. متشکریم! 🏴‍☠️";
+      status.textContent = "پیام شما با موفقیت ثبت شد. متشکریم!";
     }
     form.reset();
   });
