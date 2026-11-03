@@ -90,20 +90,17 @@
   }
 
   /* ---------------------------------------------------------------------
-     Contact form — lightweight client-side feedback (no backend wired up)
+     Contact form — display only: there is no backend, so the form never
+     claims a message was sent. The submit button is disabled in markup;
+     this handler is only a guard that states the same honest message.
      --------------------------------------------------------------------- */
   const form = document.querySelector(".contact-form");
   const status = document.getElementById("form-status");
 
   form?.addEventListener("submit", (e) => {
     e.preventDefault();
-    if (!form.checkValidity()) {
-      form.reportValidity();
-      return;
-    }
     if (status) {
-      status.textContent = "پیام شما با موفقیت ثبت شد. متشکریم!";
+      status.textContent = "این فرم فقط نمایشی است؛ پیام شما به جایی ارسال نمی‌شود.";
     }
-    form.reset();
   });
 })();
