@@ -1,11 +1,6 @@
 (() => {
   "use strict";
 
-  /* ---------------------------------------------------------------------
-     Theme switch — same design as the portfolio site (animated
-     sun/moon switch, checkbox checked = dark), wired to this site's
-     data-theme system and its own localStorage key.
-     --------------------------------------------------------------------- */
   const root = document.documentElement;
   const themeCheckbox = document.getElementById("themeCheckbox");
   const STORAGE_KEY = "luffy-site-theme";
@@ -77,9 +72,6 @@
     setTheme(currentTheme === "dark" ? "light" : "dark", ox, oy);
   });
 
-  /* ---------------------------------------------------------------------
-     Scroll-reveal animations
-     --------------------------------------------------------------------- */
   const revealEls = document.querySelectorAll("[data-reveal]");
 
   if ("IntersectionObserver" in window && revealEls.length) {
@@ -102,9 +94,6 @@
     revealEls.forEach((el) => el.classList.add("is-visible"));
   }
 
-  /* ---------------------------------------------------------------------
-     Active link highlighting in the anchor nav
-     --------------------------------------------------------------------- */
   const sections = document.querySelectorAll("main .section, .media");
   const anchorLinks = document.querySelectorAll(".anchor-nav a");
 
@@ -128,11 +117,6 @@
     });
   }
 
-  /* ---------------------------------------------------------------------
-     Contact form — display only: there is no backend, so the form never
-     claims a message was sent. The submit button is disabled in markup;
-     this handler is only a guard that states the same honest message.
-     --------------------------------------------------------------------- */
   const form = document.querySelector(".contact-form");
   const status = document.getElementById("form-status");
 

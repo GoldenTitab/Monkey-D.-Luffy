@@ -1,10 +1,4 @@
-/* ==========================================================================
-   Monkey D. Luffy — Fan Site
-   Design tokens
-   ========================================================================== */
-
 :root {
-  /* Light theme — "East Blue Morning" */
   --bg: #f5efdd;
   --bg-elevated: #fffdf6;
   --bg-alt: #ece0c2;
@@ -36,7 +30,6 @@
 }
 
 html[data-theme="dark"] {
-  /* Dark theme — "Grand Line Night" */
   --bg: #0b1220;
   --bg-elevated: #121b2e;
   --bg-alt: #0f1830;
@@ -54,9 +47,6 @@ html[data-theme="dark"] {
   color-scheme: dark;
 }
 
-/* ==========================================================================
-   Base
-   ========================================================================== */
 
 * {
   box-sizing: border-box;
@@ -125,7 +115,6 @@ img {
   border-radius: 4px;
 }
 
-/* Subtle paper-grain overlay for texture */
 .grain {
   position: fixed;
   inset: 0;
@@ -142,9 +131,6 @@ html[data-theme="dark"] .grain {
   mix-blend-mode: overlay;
 }
 
-/* ==========================================================================
-   Reveal-on-scroll animation
-   ========================================================================== */
 
 .reveal {
   opacity: 0;
@@ -173,9 +159,6 @@ html[data-theme="dark"] .grain {
   }
 }
 
-/* ==========================================================================
-   Header / Hero
-   ========================================================================== */
 
 .site-header {
   position: relative;
@@ -221,7 +204,6 @@ html[data-theme="dark"] .header-bg {
   font-size: 1.05rem;
 }
 
-/* ===== theme switch (same design as portfolio site) ===== */
 .theme-switch {
     --toggle-size: 10px;
     --container-width: 5.625em;
@@ -493,9 +475,6 @@ html[data-theme="dark"] .header-bg {
   }
 }
 
-/* ==========================================================================
-   Media section
-   ========================================================================== */
 
 .media {
   max-width: 1100px;
@@ -568,9 +547,6 @@ figcaption {
   }
 }
 
-/* ==========================================================================
-   Anchor nav (section jump bar)
-   ========================================================================== */
 
 .anchor-nav {
   max-width: 1100px;
@@ -624,9 +600,6 @@ figcaption {
   transform: translateY(-2px);
 }
 
-/* ==========================================================================
-   Sections
-   ========================================================================== */
 
 .section {
   max-width: 900px;
@@ -677,7 +650,6 @@ figcaption {
   box-shadow: 0 10px 24px var(--shadow);
 }
 
-/* ---- Timeline (Biography) ---- */
 
 .timeline {
   list-style: none;
@@ -732,7 +704,6 @@ figcaption {
   color: var(--text-muted);
 }
 
-/* ---- Crew grid ---- */
 
 .crew-grid {
   display: grid;
@@ -777,7 +748,6 @@ figcaption {
   font-size: 0.92rem;
 }
 
-/* ---- Powers ---- */
 
 .power-grid {
   display: grid;
@@ -854,7 +824,6 @@ figcaption {
   color: var(--straw-strong);
 }
 
-/* ---- Achievements log ---- */
 
 .log {
   list-style: none;
@@ -890,9 +859,6 @@ figcaption {
   font-size: 0.9rem;
 }
 
-/* ==========================================================================
-   Contact form
-   ========================================================================== */
 
 .section--contact {
   text-align: center;
@@ -981,7 +947,6 @@ figcaption {
   min-height: 1.2em;
 }
 
-/* Honest note above the display-only contact form */
 .contact-note {
   max-width: 520px;
   margin: 0 auto 1.25rem;
@@ -1010,9 +975,6 @@ figcaption {
   font-size: 0.85rem;
 }
 
-/* ==========================================================================
-   Footer
-   ========================================================================== */
 
 .site-footer {
   text-align: center;
@@ -1039,9 +1001,6 @@ figcaption {
   transform: translateY(-4px);
 }
 
-/* ==========================================================================
-   Responsive
-   ========================================================================== */
 
 @media (max-width: 640px) {
   .top-nav {
